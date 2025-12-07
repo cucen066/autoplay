@@ -5,6 +5,8 @@
 // @description  自动播放视频、自动关闭弹窗、自动播放下一集
 // @author       GitHub Copilot
 // @match        http://jjfz.muc.edu.cn/jjfz/play*
+// @downloadURL  https://raw.githubusercontent.com/cucen066/autoplay/main/autoplay.user.js
+// @updateURL    https://raw.githubusercontent.com/cucen066/autoplay/main/autoplay.user.js
 // @grant        none
 // ==/UserScript==
 
