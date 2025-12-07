@@ -5,8 +5,8 @@
 // @description  通过劫持视频API和阻止暂停事件，强制视频在失去焦点后继续播放
 // @author       GitHub Copilot
 // @match        http://jjfz.muc.edu.cn/jjfz/play*
-// @downloadURL  https://github.com/cucen066/autoplay/main/keep-playing.user.js
-// @updateURL    https://github.com/cucen066/autoplay/main/keep-playing.user.js
+// @downloadURL  https://raw.githubusercontent.com/cucen066/autoplay/main/autoplay.user.js
+// @updateURL    https://raw.githubusercontent.com/cucen066/autoplay/main/autoplay.user.js
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
@@ -366,4 +366,5 @@
     }
 
 })();
+
 
