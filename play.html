@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html class="wrap_body">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放 - 积极分子在线培训</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/www/css/public.css?v=b837a0c3e1b0362f816092552047e74ceb07e823ec29047e53cd8112904807bcaffa4bc1f201ee8c3171bd6b282c9b03295a231c9eb3757fd221fde699bc2170"/>
+    <link rel="stylesheet" type="text/css" href="/static/www/css/video.css?v=ccf641efed56d87641ef70c84751ab36751f20aa47f51ec540fb8d8033501874e55e8da24ca4fd99a9c076661e4ec90419473182d487949581966ab846fec794"/>
+    <link rel="stylesheet" type="text/css" href="/static/www/iconfont/other/iconfont.css?v=610b4d50180f3d7c931456db69027e73a05882b38e5bb8c50becb5380361466dbdf3070eb01841cb6037731b649b689cc7988dcc1b3af28531411d63cd12dc34"/>
+    <link rel="stylesheet" type="text/css" href="/static/www/iconfont/index/iconfont.css?v=baf4da2fa801cca5119428181cba251fd701407facc085809fc69c7a7d5a928c65f92f03fbb6510be2dc8ad6c2914bdc9a1048b89da2132ac8aee633df141bf2"/>
+    <link rel="stylesheet" href="/static/www/css/plyr.css?v=8eb2c35e5f6350f7b90d3d7dba469cbe95f7f57884ac8059c626953031517be3802a805560ed76e83b7b72f84c2771636bdeb795ba03f431fe7afff6bdb12733">
+
+    <style>
+        .video_play1 {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .video_tab li {
+            width: 108px;
+            background: #cfcfcf;
+            cursor: pointer;
+            color: #232323;
+        }
+
+        .video_tab li.cut {
+            width: 108px;
+            background: #e0e0e0;
+            color: #ef0312;
+        }
+
+        .video_lists p {
+            padding: 0 15px;
+            text-indent: 2em;
+        }
+
+        .video_lists li {
+            height: 35px;
+            background: url("/static/www/images/v_img4-1.png?v=04ad4b83d9cb6e3eb6b9477a9afac799e8d1be574ec3880aeac4b7997e5af7825c6dda87828d0d5a96c759740e9547c1ebca990fa140347cd661356155a1f292") no-repeat;
+        }
+
+        .video_lists li span {
+            float: left;
+            margin-top: -3px;
+            margin-left: 4px;
+            font-size: 12px;
+        }
+
+        .video_lists li span {
+            margin-top: 0px
+        }
+
+        #warnning {
+            color: red;
+        }
+
+        .i_player {
+            font-size: 16px;
+            padding: 15px 0px;
+        }
+
+        .public_cancel {
+            background: #e61d1d;
+        }
+
+        .public_submit:hover, .public_cancel:hover {
+            color: #fff;
+        }
+
+        .public_cancel {
+            background: #e61d1d;
+        }
+    </style>
+</head>
+<body class="wrap_body">
+<div class="wrap_video">
+    <div class="video_head">
+        <a href="/jjfz/lesson/video?lesson_id=537&page=1"
+           class="video_goback">返回课程页</a>
+        <h3><i class="iconfont">&#xe608;</i>《党史上的重要会议》系列微视频</h3>
+    </div>
+    <div class="video_fixed video_cut" style="z-index: 100; ">
+        <input type="hidden" name="_xsrf" value="2|955f762d|de43e1f8ab8641a5276d73d231c3c7b5|1764950952"/>
+        <div class="video_click video_click_cut">
+            <span></span>
+        </div>
+        <div class="video_cont">
+            <h2>《党史上的重要会议》系列微视频</h2>
+            <p>课程数量：27个</p>
+        </div>
+        <div class="video_tab">
+            <ul>
+                <li class="cut">目录</li>
+                <li>课程介绍</li>
+                <li>随堂笔记</li>
+            </ul>
+        </div>
+        <div class="video_lists" style="height:auto;overflow-y: auto">
+            <ul>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48512&r=video&pg=1">中国共产党第一次全国代表大会</a>
+                        <span>00:03:59</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48497&r=video&pg=1">中国共产党第二次全国代表大会</a>
+                        <span>00:03:38</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48501&r=video&pg=1">中国共产党第三次全国代表大会</a>
+                        <span>00:03:18</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48510&r=video&pg=1">中国共产党第四次全国代表大会</a>
+                        <span>00:03:20</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48511&r=video&pg=1">中国共产党第五次全国代表大会</a>
+                        <span>00:03:52</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48487&r=video&pg=1">八七会议</a>
+                        <span>00:03:39</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48499&r=video&pg=1">中国共产党第六次全国代表大会</a>
+                        <span>00:03:09</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48513&r=video&pg=1">遵义会议</a>
+                        <span>00:03:28</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48488&r=video&pg=1">中共扩大的六届六中全会</a>
+                        <span>00:03:23</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48489&r=video&pg=1">中共扩大的六届七中全会</a>
+                        <span>00:03:14</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48500&r=video&pg=1">中国共产党第七次全国代表大会</a>
+                        <span>00:03:31</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48490&r=video&pg=1">中共七届二中全会</a>
+                        <span>00:03:29</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48496&r=video&pg=1">中国共产党第八次全国代表大会</a>
+                        <span>00:04:00</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48495&r=video&pg=1">中共十一届三中全会</a>
+                        <span>00:03:33</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48494&r=video&pg=1">中共十一届六中全会</a>
+                        <span>00:03:18</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48503&r=video&pg=1">中国共产党第十二次全国代表大会</a>
+                        <span>00:03:26</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48507&r=video&pg=1">中国共产党第十三次全国代表大会</a>
+                        <span>00:03:09</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48508&r=video&pg=1">中国共产党第十四次全国代表大会</a>
+                        <span>00:03:18</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48509&r=video&pg=1">中国共产党第十五次全国代表大会</a>
+                        <span>00:03:17</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;color:red"
+                           href="/jjfz/play?v_id=12693&r_id=48505&r=video&pg=1">中国共产党第十六次全国代表大会</a>
+                        <span>00:03:22</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48506&r=video&pg=1">中国共产党第十七次全国代表大会</a>
+                        <span>00:03:22</span>
+                    </li>
+                    <li class="video_red1">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48502&r=video&pg=1">中国共产党第十八次全国代表大会</a>
+                        <span>00:03:38</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48492&r=video&pg=1">中共十八届三中全会</a>
+                        <span>00:03:24</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48491&r=video&pg=1">中共十八届六中全会</a>
+                        <span>00:03:26</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48504&r=video&pg=1">中国共产党第十九次全国代表大会</a>
+                        <span>00:03:22</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48493&r=video&pg=1">中共十九届六中全会</a>
+                        <span>00:03:32</span>
+                    </li>
+                    <li class="">
+                        <a style="width:70%;"
+                           href="/jjfz/play?v_id=12693&r_id=48498&r=video&pg=1">中国共产党第二十次全国代表大会</a>
+                        <span>00:03:56</span>
+                    </li>
+            </ul>
+            <div style="height: 130px"></div>
+        </div>
+        <div class="video_lists hidden">
+            <p><p>《党史上的重要会议》系列微视频重点选取党的代表大会和中央全会等若干具有重大意义的会议，共27集，每集时长约3分钟。该系列微视频旨在通过对重要会议的历史背景、主要内容和重大意义的简要介绍，帮助广大网民重温学习党的历史，进一步了解党的不懈奋斗史、不怕牺牲史、理论探索史、为民造福史、自身建设史，弘扬伟大建党精神，为全面建设社会主义现代化国家、全面推进中华民族伟大复兴而团结奋斗。</p></p>
+        </div>
+        <div class="video_lists hidden" style="height:auto;overflow-y: auto">
+            <div class="video_note">
+                <textarea placeholder="在此记录你的想法" id="note_input"></textarea>
+                <div class="note_error"></div>
+                <a href="javascript:void(0);" class="note_save">保存</a>
+                <div class="clear"></div>
+                <!--空-->
+                    <div class="video_note_k">
+                        还没有写笔记哦，马上添加第一个灵动瞬间
+                        <img src="/static/www/images/forum_img.jpg?v=3454f0ae50aa10940017b538c5402583400e2993f2ad0265e50e02d6d859fd0e00356b494f8d5114a15109d822c31bd7bc771e15fabba698c732120364077855">
+                    </div>
+                <!--end-->
+                <ul class="video_note_list" style="height:300px;overflow-y:auto;">
+                </ul>
+            </div>
+        </div>
+        <div class="video_bottom">
+            <div class="video_bottom_zan  "
+                 data-id="12693"><span>122</span><i class="iconfont">&#xe615;</i></div>
+            <a href="#" class="video_bottom_tlq">课程讨论区</a>
+        </div>
+    </div>
+    <div class="video_play1" id="wrapper">
+        <video controls="" id="video" class="plyr--setup"></video>
+    </div>
+</div>
+<script src="/static/www/js/jquery-1.12.4.min.js?v=8c6b0c1fcde829ef5ab02a643959019d4ac30d3a7cc25f9a7640760fefff26d9713b84ab2e825d85b3b2b08150265a10143f82e05975accb10645efa26357479" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/static/framework/layui/layui.js?v=3c074594a667484aa78b2227f834c4bebab07a6b4bd795f94570d3e3da911aa48275e13c54e1c6848cd2ec1fbb2bad5cb104e9a6bc1f71c967e93dfde62aa9b2"></script>
+<script src="/static/www/js/public.min.js?v=d8625c284b179d807d0616c4d6affc72dfed0bfa8e228229ac00035194b20b31ecd7e6791acc9bfabc0757415a01b5dd149af2d4f2c1bfaf1eeef7fda6146960" type="text/javascript" charset="utf-8"></script>
+<script src="/static/www/js/p2p-media-loader-core.min.js?v=7529e282b4181b571914f549bbc074f95218f9823bc372f00d2c791f457ef8c3324e7328fbac6080493c83d71bbb585175ca809135d38db0204165b717475cc8"></script>
+<script src="/static/www/js/p2p-media-loader-hlsjs.min.js?v=4688a35bf0917776321c371677d32c03b841a7f5433ca588301e880e52d0b2560e96d9de4b110ec4d311db7c708748a04de071ca997a57cab2440276450b9346"></script>
+<script src="/static/www/js/plyr.min.js?v=e4770ec37c7f83718052934dcaf298076fdff22bd534155e6dda82c73dcc99d7edc7bbd739d6d8be89c1d837ade9155c035203c58798593033c5183e73abaf61"></script>
+<script src="/static/www/js/hls.min.js?v=91bb97d76a8c91e19903e9cd3748ae81d53719905cd591565a4e53bf68f27b55c26c85bc670a2b1e41fbc048b851487f3fbaa4454d5b10aada44313b3b8fbaae"></script>
+
+<script>
+    $(".video_lists").animate({scrollTop: $(".video_red1").offset().top - 162}, 1000);
+
+    var loop_flag = "";
+    var timer = "";
+    var flag = false;
+    var video = document.getElementById("video");
+
+    // 续播定时器
+    function current_time() {
+        timer = setInterval(function () {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                dataType: "json",
+                url: "/jjfz/lesson/current_time",
+                data: {
+                    rid: "48502",
+                    time: video.currentTime,
+                    _xsrf: $(":input[name='_xsrf']").val()
+                },
+                success: function (data) {
+                    if (Number(data.code) == 0) {
+                        player.pause();
+                        var msg = "系统监测到您有异常学习行为，本视频观看无效，请您重新进行该视频内容学习。"
+                        public_alert(1, ["我知道了"], '<i class="iconfont">&#xe633;</i><p>' + msg + '</p><p></p>', 'public_cont1', function () {
+                            window.location.reload()
+                        });
+                    }
+                }
+            });
+        }, 30000);
+    }
+
+    var hlsSupported = Hls.isSupported();
+    if (hlsSupported) {
+        try {
+            var isP2PSupported = p2pml.core.HybridLoader.isSupported();
+        } catch (err) {
+            window.location.href = "/static/browser_error.html?v=b57810c40053fbcd20af772b6b6c48b62499dd0ba8bf87bf775a937ad28d427fd99b65bec35bef2368fd1d5dcdbc7c8ed4478c72bbb8d4e35d58eab0fd40fab7";
+        }
+
+        var engine = isP2PSupported ? new p2pml.hlsjs.Engine() : undefined;
+
+        var player = new Plyr(video, {
+            captions: {
+                active: true,
+                update: true
+            },
+            controls: ['play-large', 'play', 'current-time', 'mute', 'volume', 'fullscreen'],
+            seekTime: 0
+        });
+
+        var hls = new Hls({
+            liveSyncDurationCount: 7, // To have at least 7 segments in queue
+            loader: isP2PSupported ? engine.createLoaderClass() : Hls.DefaultConfig.loader
+        });
+
+        if (isP2PSupported) {
+            p2pml.hlsjs.initHlsJsPlayer(hls);
+        }
+
+        // var videoSrc = 'http://video.dangqipiaopiao.com/m3u8/3cd74e54455e95c04db1e7dc0be2e95b/3cd74e54455e95c04db1e7dc0be2e95b.m3u8';
+        var videoSrc = '/m3u8/18df0cffac63312d5a55abac663cf3ea/18df0cffac63312d5a55abac663cf3ea.m3u8';
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+
+        layui.use("layer", function () {
+            var layer = layui.layer;
+
+            layer.load(2, {shade: [0.5, 'grey']});
+
+            player.on('loadedmetadata', function (event) {
+                layer.closeAll('loading');
+
+                if ("" != "") {
+                    var r_time = parseInt();
+
+                    hour = 0, minute = 0, second = 0; //时间默认值
+                    hour = Math.floor(r_time / 60 / 60) < 10 ? '0' + Math.floor(r_time / 60 / 60) : Math.floor(r_time / 60 / 60);
+                    minute = Math.floor(r_time / 60 % 60) < 10 ? '0' + Math.floor(r_time / 60 % 60) : Math.floor(r_time / 60 % 60);
+                    second = Math.floor(r_time % 60) < 10 ? '0' + Math.floor(r_time % 60) : Math.floor(r_time % 60);
+                    last_time = hour + ":" + minute + ":" + second;
+
+                    public_alert(2, ["从头开始", "继续观看"], '<p class="i_player">同学你好！该课程视频你上次观看到：' + last_time + '<br/><br/></p><p></p><p></p>', 'public_cont1', function () {
+                        $(".public_close").click(); //此为关闭方法
+                        player.play();
+                    }, function () {
+                        $(".public_close").click(); //此为关闭方法
+
+                        player.forward(parseInt());
+                        player.play();
+                    });
+                } else {
+                    public_alert(1, ["我知道了"], '<i class="iconfont">&#xe633;</i><p>您需要完整观看一遍课程视频，才能获取本课学时，看到视频播放完毕提示框即为完成，然后视频可以拖动播放。</p><p></p>', 'public_cont1', function () {
+                        $(".public_close").click(); //此为关闭方法
+                        player.play();
+                    });
+                }
+            });
+        });
+    } else {
+        window.location.href = "/static/browser_error.html?v=b57810c40053fbcd20af772b6b6c48b62499dd0ba8bf87bf775a937ad28d427fd99b65bec35bef2368fd1d5dcdbc7c8ed4478c72bbb8d4e35d58eab0fd40fab7";
+    }
+
+    player.on('ended', function (event) {
+        clearInterval(timer);   //定时器清除；
+
+        $.ajax({
+            type: "POST",
+            cache: false,
+            dataType: "json",
+            url: "/jjfz/lesson/resource_record",
+            data: {
+                rid: "2508855",
+                resource_id: "48502",
+                video_id: "12693",
+                lesson_id: "537",
+                _xsrf: $(":input[name='_xsrf']").val()
+            },
+            success: function (data) {
+                window.clearInterval(loop_flag);
+                window.clearInterval(flag);
+
+                if (Number(data.code) == 1) {
+                    public_alert(1, ["我知道了"], '<i class="iconfont">&#xe633;</i><p>当前视频播放完毕！</p><p></p>', 'public_cont1', function () {
+                        window.location.reload()
+                    });
+                    $(".public_cont").css("left", "40%");
+                    $('.plyr__controls').show();
+                } else if (Number(data.code) == -1) {
+                    var msg = "系统监测到您有异常学习行为，本视频观看无效，请您重新进行该视频内容学习。"
+                    public_alert(1, ["我知道了"], '<i class="iconfont">&#xe633;</i><p>' + msg + '</p><p></p>', 'public_cont1', function () {
+                        window.location.reload()
+                    });
+                }
+            }
+        });
+    });
+
+    // 监听播放事件
+    player.on('play', function (event) {
+        current_time();
+        // studyTime();
+        loop_flag = setTimeout("loop_pause()", 300000);
+    });
+
+    // 监听暂停事件
+    player.on('pause', function (event) {
+        window.clearTimeout(flag);
+        clearInterval(timer);   //定时器清除；
+    });
+
+    // 监听倍速播放，并重置为正常倍速
+    player.on('ratechange', function (event) {
+        if (player.media.playbackRate != 1) {
+            player.media.playbackRate = 1;
+        }
+    });
+
+    document.oncontextmenu = new Function("return false;");
+    document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 123) {
+            e.returnValue = false;
+            return (false);
+        }
+    }
+
+    // 定期暂停方法
+    function loop_pause() {
+        player.pause();
+
+        public_alert(1, ["继续"], '<i class="iconfont">&#xe633;</i><p>视频已暂停，点击按钮后继续学习！</p><p></p>', 'public_cont1', function () {
+            $(".public_close").click(); //此为关闭方法
+            player.play();
+        });
+    }
+
+    document.addEventListener('visibilitychange', function () { //浏览器切换事件
+        if (document.visibilityState == 'hidden') {
+            player.pause()
+        } else {
+            player.on('loadedmetadata', function (event) {
+                player.play()
+            })
+        }
+    });
+</script>
+<script type="text/javascript">
+    var _wh = document.body.clientHeight;
+    var _video_w = $(".plyr--setup").width();
+    var _vw = _video_w - 329;
+    var _vvh = _wh - 135;
+
+    $(".public_cont1").css("left", _vw / 2 + "px");
+    $(".video_click").click(function () {
+        if ($(this).hasClass("video_click_cut")) {
+            var _vw = _video_w;
+            $(this).removeClass("video_click_cut");
+            $(".video_fixed").removeClass("video_cut");
+            $(".wrap_video").animate({width: _vw + 'px'}, "fast");
+            var _vh = $(".plyr--setup").height();
+            var _top = (_wh - _vh) / 2 - 85;
+
+            if (_top < 0) _top = 0;
+            $(".video_play1").animate({top: _top + 'px'}, "hide");
+            $(".public_cont1").css("left", _vw / 2 + "px");
+        } else {
+            var _vw = _video_w - 329;
+            $(this).addClass("video_click_cut");
+            $(".video_fixed").addClass("video_cut");
+            $(".wrap_video").animate({width: _vw + 'px'}, "");
+            var _vh = $(".plyr--setup").height() * _vw / _video_w;
+            var _top = (_wh - _vh) / 2 - 120;
+            if (_top < 0) _top = 0;
+            //$(".video_play1").css("top", _top + "px");
+            $(".video_play1").animate({top: _top + 'px'}, "hide");
+            $(".public_cont1").css("left", _vw / 2 + "px");
+        }
+    });
+
+    var _vh = $(".plyr--setup").height();
+    var _top = (_wh - _vh) / 2 - 85;
+    if (_top < 0) {
+        _top = 0;
+        $(".plyr--setup").height(_wh - 90 + "px");
+    }
+    $(".wrap_video").animate({width: _vw + 'px'}, "");
+    $(".video_play1").css("top", _top + "px");
+    $(".video_lists").css("height", _vvh + "px");
+    $(".video_lists").css("overflow-y", "auto");
+</script>
+
+
+<script>
+    /*
+    function studyTime() {
+        var diff_time = 5000;
+
+        if (document.hidden == false) {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                dataType: "json",
+                url: "/jjfz/lesson/study_time",
+            data: {
+                rid: "None",
+                study_time: diff_time,
+                _xsrf: $(":input[name='_xsrf']").val()
+            },
+            success: function () {
+
+            }
+        });
+    } else {
+        player.pause();
+    }
+
+    flag = setTimeout("studyTime()", diff_time);
+}
+*/
+
+    $(".video_tab li").click(function () {
+        var this_num = $(this).index();
+        $(".video_tab li").removeClass("cut");
+        $(this).addClass("cut");
+        $(".video_lists").addClass("hidden");
+        $(".video_lists").eq(this_num).removeClass("hidden");
+    });
+
+    <!-- 笔记方法 -->
+    function delete_note(note_id) {
+        $.ajax({
+            type: "POST",
+            cache: false,
+            dataType: "json",
+            url: "/jjfz/lesson/delete_note",
+            data: {
+                note_id: note_id,
+                _xsrf: $(":input[name='_xsrf']").val()
+            },
+            success: function () {
+
+            }
+        });
+    }
+
+    function update_note(note_id) {
+        var sava_button = $("#save_" + note_id);
+        var textarea = sava_button.parents("li").find(".forum_edit_textarea")
+        textarea.addClass("hidden");
+
+        var forum_edit_content = sava_button.parents("li").find(".forum_edit_content")
+        forum_edit_content.removeClass("hidden")
+
+        var edit_save = sava_button.parents("li").find(".forum_edit_save")
+        edit_save.addClass("hidden");
+
+        var forum_edit = sava_button.parents("li").find(".forum_edit")
+        forum_edit.removeClass("hidden");
+
+        $.ajax({
+            type: "POST",
+            cache: false,
+            dataType: "json",
+            url: "/jjfz/lesson/update_note",
+            data: {
+                note_id: note_id,
+                content: textarea.val(),
+                _xsrf: $(":input[name='_xsrf']").val()
+            },
+            success: function () {
+                forum_edit_content.text(textarea.val())
+            }
+        });
+    }
+
+    // 点赞
+    function vote(video_id, option) {
+        $.ajax({
+            type: "POST", cache: false, dataType: "json", url: "/jjfz/lesson/lesson_vote",
+            data: {
+                video_id: video_id,
+                option: option,
+                state: 0,
+                _xsrf: $(":input[name='_xsrf']").val()
+            }, success: function (data) {
+                if (Number(data.code) == 1) {
+                }
+            }
+        });
+    }
+
+    $(".video_bottom_zan").click(function () {
+        var video_id = $(this).attr("data-id");
+        var video_count = $(this).find("span").html();
+        if ($(this).hasClass("zan_cut")) {
+            $(this).removeClass("zan_cut");
+            var count = parseInt(video_count) - 1;
+            $(this).find("span").html(count);
+            vote(video_id, 0);
+
+        } else {
+            $(this).addClass("zan_cut");
+            var count = parseInt(video_count) + 1;
+            $(this).find("span").html(count);
+            vote(video_id, 1);
+        }
+    });
+
+    layui.use("layer", function () {
+        var layer = layui.layer;
+        $(".video_bottom_tlq").click(function () {
+
+            var url = "/jjfz/lesson/forum?v_id=" + 12693;
+            layer.open({
+                type: 2,
+                title: "课程讨论区",
+                area: ['1152px', '70%'],
+                fixed: true, //不固定
+                maxmin: true,
+                content: url
+            });
+        })
+    });
+
+    function add_note(note, note_id) {
+        $(".video_note_k").hide();
+        html = "<li>";
+        html += "<div class='forum_edit_content'>" + note + "</div>";
+        html += "<textarea class='hidden forum_edit_textarea' name='text' rows='' cols=''>" + note + "</textarea>";
+        html += "<span>刚刚</span>";
+        html += "<div class='video_note_xg'>";
+        html += "<a href='#' class='forum_edit'>编辑</a>";
+        html += "<a href='javascript:update_note(" + note_id + ")' id='save_" + note_id + "' class='forum_edit_save hidden' >保存</a>";
+        html += "<a href='javascript:delete_note(" + note_id + ")' class='forum_delete'>删除</a>";
+        html += "</div>";
+        html += "<div class='clear'></div>";
+        html += "</li>";
+        $(html).prependTo(".video_note_list");
+        //alert(html)
+    }
+
+    // 编辑按钮
+    $(".forum_edit").click(function () {
+        $(this).parents("li").find(".forum_edit_textarea").removeClass("hidden");
+        $(this).parents("li").find(".forum_edit_content").addClass("hidden");
+        $(this).parents("li").find(".forum_edit_save").removeClass("hidden");
+        $(this).parents("li").find(".forum_edit").addClass("hidden");
+
+    });
+    // 删除
+    $(".forum_delete").click(function () {
+        $(this).parents("li").hide()
+    });
+
+    function save_note() {
+        //alert($("#note_input").val())
+        //return
+        var note = $("#note_input").val();
+        if (note == "") {
+            $(".note_error").html("还没有写笔记哦！");
+            return false;
+        } else {
+            $.ajax({
+                type: "POST", cache: false, dataType: "json", url: "/jjfz/lesson/lesson_note",
+                data: {
+                    video_id: "12693",
+                    lesson_id: "537",
+                    content: note,
+                    _xsrf: $(":input[name='_xsrf']").val()
+                }, success: function (data) {
+                    if (Number(data.code) == 1) {
+                        //alert(data.message)
+                        add_note(note, data.message);
+                        $(".forum_edit").click(function () {
+                            $(this).parents("li").find(".forum_edit_textarea").removeClass("hidden");
+                            $(this).parents("li").find(".forum_edit_content").addClass("hidden");
+                            $(this).parents("li").find(".forum_edit_save").removeClass("hidden");
+                            $(this).parents("li").find(".forum_edit").addClass("hidden");
+                        });
+                        $(".forum_delete").click(function () {
+                            $(this).parents("li").hide()
+                        })
+                    }
+                    $("#note_input").val("")
+                }
+            });
+        }
+    }
+
+    $(".note_save").on("click", function () {
+        var note = $("#note_input").val();
+        if (note == "") {
+            $(".note_error").html("还没有写笔记哦！");
+            return false;
+        } else {
+            $.ajax({
+                type: "POST", cache: false, dataType: "json", url: "/jjfz/lesson/lesson_note",
+                data: {
+                    video_id: "12693",
+                    lesson_id: "537",
+                    content: note,
+                    _xsrf: $(":input[name='_xsrf']").val()
+                }, success: function (data) {
+                    if (Number(data.code) == 1) {
+                        //alert(data.message)
+                        add_note(note, data.message);
+                        $(".forum_edit").click(function () {
+                            $(this).parents("li").find(".forum_edit_textarea").removeClass("hidden");
+                            $(this).parents("li").find(".forum_edit_content").addClass("hidden");
+                            $(this).parents("li").find(".forum_edit_save").removeClass("hidden");
+                            $(this).parents("li").find(".forum_edit").addClass("hidden");
+                        });
+                        $(".forum_delete").click(function () {
+                            $(this).parents("li").hide()
+                        })
+                    }
+                    $("#note_input").val("")
+                }
+            });
+        }
+    });
+
+    var timesRun = 0;
+    var t1 = window.setInterval(function () {
+        if (timesRun > 0) {
+            window.clearInterval(t1);
+        }
+
+        $.ajax({
+            type: "GET", cache: false, dataType: "json", url: "/jjfz/public/refresh",
+            data: {
+                t: 1,
+                _xsrf: $(":input[name='_xsrf']").val()
+            }, success: function (data) {
+                if (data.code == 1) {
+                    timesRun += 1;
+
+                    public_alert2(1, ["退出"], '<i class="iconfont">&#xe633;</i><p>用户登录超时，点击退出重新登录</p><p></p>', 'public_cont1', function () {
+                        window.location.href = "/user/logout";
+                    });
+                } else if (data.code == 2) {
+                    timesRun += 1;
+
+                    public_alert2(1, ["退出"], '<i class="iconfont">&#xe633;</i><p>异地登录，点击退出重新登录后，请及时修改密码</p><p></p>', 'public_cont1', function () {
+                        window.location.href = "/user/logout";
+                    });
+                } else {
+                    return true;
+                }
+            }
+        });
+    }, 30000);
+</script>
+</body>
+</html>
