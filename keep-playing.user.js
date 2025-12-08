@@ -74,14 +74,27 @@
                     index: index,
                     url: fullUrl,
                     title: title,
-                    href: href
+                    href: href,
+                    element: link.closest('li') // 保存 li 元素引用
                 });
             }
         });
         
         log('播放列表初始化完成，共 ' + videoPlaylist.length + ' 个视频');
         
-        // 查找当前视频在播放列表中的位置
+        // 方法1: 通过页面上的 video_red1 类（当前播放视频的标记）
+        const currentVideoLi = document.querySelector('.video_lists ul li.video_red1');
+        if (currentVideoLi) {
+            for (let i = 0; i < videoPlaylist.length; i++) {
+                if (videoPlaylist[i].element === currentVideoLi) {
+                    currentVideoIndex = i;
+                    log('通过 video_red1 类找到当前视频: [' + (i + 1) + '/' + videoPlaylist.length + '] ' + videoPlaylist[i].title);
+                    return; // 找到就返回
+                }
+            }
+        }
+        
+        // 方法2: 通过 URL 参数 r_id 匹配
         const urlParams = new URLSearchParams(window.location.search);
         const currentRid = urlParams.get('r_id');
         
@@ -89,8 +102,20 @@
             for (let i = 0; i < videoPlaylist.length; i++) {
                 if (videoPlaylist[i].href.indexOf('r_id=' + currentRid) !== -1) {
                     currentVideoIndex = i;
-                    log('当前视频: [' + (i + 1) + '/' + videoPlaylist.length + '] ' + videoPlaylist[i].title);
-                    break;
+                    log('通过 r_id 参数找到当前视频: [' + (i + 1) + '/' + videoPlaylist.length + '] ' + videoPlaylist[i].title);
+                    return; // 找到就返回
+                }
+            }
+        }
+        
+        // 方法3: 通过 v_id 参数匹配（备用方案）
+        const currentVid = urlParams.get('v_id');
+        if (currentVid) {
+            for (let i = 0; i < videoPlaylist.length; i++) {
+                if (videoPlaylist[i].href.indexOf('v_id=' + currentVid) !== -1) {
+                    currentVideoIndex = i;
+                    log('通过 v_id 参数找到当前视频: [' + (i + 1) + '/' + videoPlaylist.length + '] ' + videoPlaylist[i].title);
+                    return; // 找到就返回
                 }
             }
         }
